@@ -4,7 +4,6 @@
       "Name": "MemFreq",
       "Path": "/sys/devices/platform/soc/1c00f000.dvfsrc/mtk-dvfsrc-devfreq/devfreq/mtk-dvfsrc-devfreq/userspace/set_freq",
       "Values": [
-        "9999999999",
         "8533000000",
         "6400000000",
         "5500000000",
@@ -166,7 +165,6 @@
       "Name": "CPULittleClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
-        "9999999",
         "2200000",
         "2100000",
         "2000000",
@@ -193,7 +191,6 @@
       "Name": "CPULittleClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
-        "9999999",
         "2200000",
         "2100000",
         "2000000",
@@ -258,7 +255,6 @@
       "Name": "CPUMidClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
       "Values": [
-        "9999999",
         "3200000",
         "3100000",
         "3000000",
@@ -296,7 +292,6 @@
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq",
       "Values": [
-        "9999999",
         "3350000",
         "3200000",
         "3100000",
@@ -336,7 +331,6 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq",
       "Values": [
-        "9999999",
         "3350000",
         "3200000",
         "3100000",
@@ -437,30 +431,30 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1300000"
+      "Value": "1000000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUMidClusterMinFreq",
       "Duration": 0,
-      "Value": "1300000"
+      "Value": "1000000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUMidClusterMinFreq",
-      "Duration": 2000,
-      "Value": "9999999"
+      "Duration": 1000,
+      "Value": "1300000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 2000,
-      "Value": "9999999"
+      "Duration": 1000,
+      "Value": "1300000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "MemFreq",
-      "Duration": 2000,
+      "Duration": 1500,
       "Value": "9999999999"
     },
     {
